@@ -106,6 +106,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 header {
@@ -118,10 +120,6 @@ main {
 
 footer {
   width: 100%;
-}
-
-.content {
-  max-width: 955px;
 }
 
 header {
@@ -138,10 +136,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  min-height: 80px;
   background-color: rgba(52, 73, 94, 0.7);
 }
 
 header .content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,12 +150,11 @@ header .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: unset;
-      -ms-flex-align: unset;
-          align-items: unset;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .content .logo {
@@ -178,4 +178,73 @@ header .content .logo__pic {
   /* Style for "logo" */
   width: 40px;
   height: 40px;
+  margin: 0 25px 0 0;
+}
+
+header .content .logo__text {
+  /* Style for "Иван Ивано" */
+  color: #ecf0f1;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1px;
+}
+
+header .content .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 423px;
+}
+
+header .content .menu__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content .menu__points .menu__link {
+  margin: 0 20px 0 0;
+}
+
+header .content .menu__points .menu__link .menu__text {
+  /* Style for "Главная" */
+  color: #ecf0f1;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1px;
+}
+
+header .content .menu__order-btn {
+  background: #54d98c;
+  /* Style for "Заказать с" */
+  width: 170px;
+  height: 42px;
+  color: #ecf0f1;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1px;
+  border-radius: 8px;
 }
