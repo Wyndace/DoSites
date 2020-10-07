@@ -111,15 +111,15 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
 }
 
 main {
-  width: 100%;
+  width: 100vw;
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
 }
 
 header {
@@ -138,6 +138,8 @@ header {
           align-items: center;
   width: 100%;
   min-height: 80px;
+  position: absolute;
+  top: 0;
   background-color: rgba(52, 73, 94, 0.7);
 }
 
@@ -155,6 +157,10 @@ header .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 30px;
+  z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 header .content .logo {
@@ -247,4 +253,58 @@ header .content .menu__order-btn {
   font-weight: 700;
   line-height: 1px;
   border-radius: 8px;
+}
+
+main .content .watch {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/background.png") center center/100% 100% no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .content .watch__titles {
+  margin: 0 0 15px 0;
+  /* Style for "Верстка са" */
+  width: 670px;
+  height: 171px;
+  color: #ecf0f1;
+  font-family: "Open Sans";
+  line-height: 87px;
+  font-weight: 700;
+  /* Text style for "качественн" */
+}
+
+main .content .watch__titles .watch__title {
+  font-size: 64px;
+}
+
+main .content .watch__titles .watch__subtitle {
+  font-size: 36px;
+}
+
+main .content .watch__portfolio-btn {
+  /* Style for "Смотреть п" */
+  width: 300px;
+  height: 50px;
+  color: #ecf0f1;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  /* Style for "background" */
+  border-radius: 5px;
+  line-height: 42px;
+  border: 4px solid #2ecc71;
 }
