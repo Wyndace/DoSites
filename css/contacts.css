@@ -1,0 +1,99 @@
+main {
+  margin: 132px 0 0 0;
+}
+main .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+  align-content: unset;
+  margin: 0 0 65px 0;
+}
+main .contacts .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: unset;
+  align-content: unset;
+}
+main .contacts__title {
+  /* Style for "Веб-разраб" */
+  width: 467px;
+  height: 107px;
+  color: #2c3e50;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  position: relative;
+}
+main .contacts__title:after {
+  /* Style for "line" */
+  width: 30px;
+  height: 4px;
+  background: #2ecc71;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 10px 0 0 0;
+  content: "";
+}
+main .contacts__text {
+  margin: 16px 0 0 0;
+  /* Style for "Правильная" */
+  width: 341px;
+  height: 25px;
+  color: #2c3e50;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+main .contacts__other {
+  display: flex;
+  flex-direction: row;
+  justify-content: usnet;
+  align-items: unset;
+  align-content: unset;
+}
+main .contacts__icon {
+  /* Style for "telegram" */
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 0;
+}
+main .contacts__tel {
+  margin: 40px 0 40px 0;
+}
+main .contacts__tel .contacts__icon {
+  background: url("../img/icons/01.svg") center center / 100% 100% no-repeat;
+}
+main .contacts__telegramm {
+  margin: 0 0 40px 0;
+}
+main .contacts__telegramm .contacts__icon {
+  /* Style for "telegram" */
+  background: url("../img/icons/02.svg") center center / 100% 100% no-repeat;
+}
+main .contacts__twitter {
+  margin: 0 0 40px 0;
+}
+main .contacts__twitter .contacts__icon {
+  /* Style for "telegram" */
+  background: url("../img/icons/03.svg") center center / 100% 100% no-repeat;
+}
+main .contacts__facebook .contacts__icon {
+  /* Style for "telegram" */
+  background: url("../img/icons/04.svg") center center / 100% 100% no-repeat;
+}
+main .contacts__picture {
+  /* Style for "photo" */
+  width: 297px;
+  height: 429px;
+}
