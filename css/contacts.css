@@ -7,14 +7,16 @@ main .contacts {
   justify-content: unset;
   align-items: center;
   align-content: unset;
+  min-width: 100vw;
   margin: 0 0 65px 0;
 }
 main .contacts .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: unset;
   align-content: unset;
+  width: 952px;
 }
 main .contacts__title {
   /* Style for "Веб-разраб" */
@@ -96,4 +98,50 @@ main .contacts__picture {
   /* Style for "photo" */
   width: 297px;
   height: 429px;
+}
+main .map {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+  align-content: unset;
+  min-width: 100vw;
+  background: #ffffff;
+}
+main .map__title {
+  margin: 85px 0 25px 0;
+  /* Style for "Адреса офи" */
+  width: 190px;
+  height: 33px;
+  color: #2c3e50;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  position: relative;
+}
+main .map__title:after {
+  /* Style for "line" */
+  width: 30px;
+  height: 4px;
+  background: #2ecc71;
+  margin: 10px 0 0 0;
+  position: absolute;
+  left: 0;
+  top: 29px;
+  content: "";
+}
+main .map__map {
+  border: 1px solid #000000;
+  margin: 0 0 80px 0;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: unset;
+  align-content: unset;
 }
